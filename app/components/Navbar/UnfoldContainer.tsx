@@ -1,8 +1,8 @@
-import { NavbarUnfoldItem } from '@/app/database';
+import { LinkItem } from '@/app/database';
 import Link from 'next/link';
 
 interface UnfoldContainerProps {
-	items: NavbarUnfoldItem[];
+	items: LinkItem[];
 }
 
 function UnfoldContainer({ items }: UnfoldContainerProps) {

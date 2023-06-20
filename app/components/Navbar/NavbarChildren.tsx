@@ -2,12 +2,12 @@
 
 import { useState } from 'react';
 import Button from './Button';
-import { NavbarUnfoldItem } from '@/app/database';
+import { LinkItem } from '@/app/database';
 import UnfoldContainer from './UnfoldContainer';
 
 interface NavbarChildrenProps {
 	name: string;
-	items: NavbarUnfoldItem[];
+	items: LinkItem[];
 }
 
 function NavbarChildren({ items, name }: NavbarChildrenProps) {
