@@ -1,5 +1,4 @@
 import { CallToActionItem } from '@/app/database';
-import Link from 'next/link';
 
 interface CallToActionProps {
 	item: CallToActionItem;
@@ -13,9 +12,9 @@ function CallToAction({ item }: CallToActionProps) {
 			<p>{description}</p>
 			<div className='flex flex-col'>
 				{links.map(link => (
-					<Link key={link.id} href={link.href}>
+					<a key={link.id} href={link.href}>
 						{link.name}
-					</Link>
+					</a>
 				))}
 			</div>
 		</div>

@@ -1,6 +1,5 @@
 import { navbarItems } from '../database';
 import Logo from './Navbar/Logo';
-import Link from 'next/link';
 import NavbarChildren from './Navbar/NavbarChildren';
 
 interface NavbarProps {}
@@ -8,17 +7,17 @@ interface NavbarProps {}
 function Navbar({}: NavbarProps) {
 	return (
 		<div className='flex justify-between items-center h-10'>
-			<Link className='h-full' href='https://www.e2u.kr/'>
+			<a className='h-full' href='https://www.e2u.kr/'>
 				<Logo />
-			</Link>
+			</a>
 
 			<section className='flex gap-7'>
 				{navbarItems.map(item => {
 					if (typeof item.actionType === 'string') {
 						return (
-							<Link key={item.id} href={item.actionType}>
+							<a key={item.id} href={item.actionType}>
 								{item.name}
-							</Link>
+							</a>
 						);
 					}
 					if (typeof item.actionType === 'object') {
