@@ -103,7 +103,7 @@ export type CallToActionItem = {
 	links: LinkItem[];
 };
 
-export const callToActions: Record<'cover', CallToActionItem> = {
+export const callToActions: Record<'cover' | 'main', CallToActionItem> = {
 	cover: {
 		title: '쉽고 빠른 결제/정산시스템',
 		description:
@@ -118,6 +118,18 @@ export const callToActions: Record<'cover', CallToActionItem> = {
 				href: 'https://www.e2u.kr/payment-search',
 				id: '2',
 				name: '결제내역 조회',
+			},
+		],
+	},
+	main: {
+		title: '이투유와 함께 결제와 정산을 해보세요.',
+		description:
+			'이투유가 함께 한다면 멋지고 새로운 경험을 하실 수 있습니다. 이투유는 지금도 계속 발전하고 있어요!',
+		links: [
+			{
+				href: 'https://www.e2u.kr/service-apply',
+				id: '1',
+				name: '서비스 신청하기',
 			},
 		],
 	},
