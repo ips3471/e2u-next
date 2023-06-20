@@ -1,7 +1,7 @@
-import Image from 'next/image';
 import PageTop from './components/PageTop';
 import Navbar from './components/Navbar';
 import Cover from './components/Cover';
+import Contents from './components/Contents';
 
 export default function Home() {
 	return (
@@ -9,6 +9,7 @@ export default function Home() {
 			<PageTop />
 			<Navbar />
 			<Cover />
+			<Contents />
 		</main>
 	);
 }

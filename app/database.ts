@@ -1,5 +1,3 @@
-import { link } from 'fs';
-
 type PageTopItem = {
 	id: string;
 	name: string;
@@ -137,16 +135,20 @@ export const imageUrls: ImageUrls = {
 	],
 };
 
+export type TextItemSection = {
+	id: string;
+	title: string;
+	description: string;
+	items: TextItem[];
+};
 export type TextItem = {
 	id: string;
 	title: string;
 	description: string;
-	items: (Omit<TextItem, 'items'> & {
-		logoImg?: Url;
-	})[];
+	logoImg?: string;
 };
 
-export const textItems: TextItem[] = [
+export const textItems: TextItemSection[] = [
 	{
 		id: '1',
 		description:
