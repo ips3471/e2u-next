@@ -3,6 +3,7 @@ import Navbar from './components/Navbar';
 import Cover from './components/Cover';
 import Contents from './components/Contents';
 import PageBottom from './PageBottom';
+import Footer from './components/Footer';
 
 export default function Home() {
 	return (
@@ -12,6 +13,7 @@ export default function Home() {
 			<Cover />
 			<Contents />
 			<PageBottom />
+			<Footer />
 		</main>
 	);
 }

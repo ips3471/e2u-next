@@ -264,3 +264,25 @@ export const textItems: TextItemSection[] = [
 		title: '',
 	},
 ];
+
+export type FooterLink = LinkItem & { isEmp: boolean };
+export const footerLinks: FooterLink[] = [
+	{
+		id: '1',
+		href: 'https://www.e2u.kr/',
+		name: '홈',
+		isEmp: false,
+	},
+	{
+		id: '2',
+		href: 'https://doc.e2u.kr/',
+		name: '결제 연동 문서',
+		isEmp: false,
+	},
+	{
+		id: '3',
+		href: 'https://pg.e2u.kr/',
+		name: '결제/정산 시스템',
+		isEmp: true,
+	},
+];
