@@ -1,5 +1,10 @@
 import Image from 'next/image';
+import PageTop from './components/PageTop';
 
 export default function Home() {
-	return <main>PAGE</main>;
+	return (
+		<main>
+			<PageTop />
+		</main>
+	);
 }
