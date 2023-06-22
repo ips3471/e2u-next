@@ -1,27 +1,32 @@
-type PageTopItem = {
+export type PageTopItem = {
 	id: string;
 	name: string;
 	href: string;
-	tagName: string;
+	tagName: TagName;
+	isEmp?: boolean;
 };
+export type TagName = 'API' | '솔루션' | '#';
 export const pageTopItems: PageTopItem[] = [
 	{
 		id: '1',
 		name: '결제 연동 문서',
 		href: 'https://doc.e2u.kr/',
 		tagName: 'API',
+		isEmp: false,
 	},
 	{
 		id: '2',
 		name: '결제/정산 시스템',
 		href: 'https://pg.e2u.kr/',
 		tagName: '솔루션',
+		isEmp: true,
 	},
 	{
 		id: '3',
 		name: '결제 내역 조회',
 		href: 'https://www.e2u.kr/payment-search',
 		tagName: '#',
+		isEmp: false,
 	},
 ];
 

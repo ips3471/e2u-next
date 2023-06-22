@@ -13,6 +13,7 @@ interface NavbarChildrenProps {
 function NavbarChildren({ items, name }: NavbarChildrenProps) {
 	const [isFold, setIsFold] = useState(true);
 	const toggle = () => setIsFold(!isFold);
+
 	return (
 		<div className='relative'>
 			{<Button name={name} isFold={isFold} onClick={toggle} />}
