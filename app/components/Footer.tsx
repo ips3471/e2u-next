@@ -6,7 +6,7 @@ interface FooterProps {}
 
 function Footer({}: FooterProps) {
 	return (
-		<div className='flex flex-col items-center space-y-4 p-container-sm border-t py-4 my-2 '>
+		<div className='flex flex-col items-center space-y-4 border-t sm:p-container-md py-4 my-2 '>
 			<div className='flex flex-col items-center space-y-4 sm:flex-row sm:w-full sm:justify-between '>
 				<h1 className=''>
 					<Image
