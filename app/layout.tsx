@@ -16,7 +16,7 @@ export default function RootLayout({
 	return (
 		<html lang='ko'>
 			<body>
-				<header className='p-container-sm space-y-3 '>
+				<header className='p-container-sm space-y-3 mb-3'>
 					<PageTop />
 					<Navbar />
 				</header>

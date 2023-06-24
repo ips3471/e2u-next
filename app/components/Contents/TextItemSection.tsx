@@ -2,22 +2,10 @@ import { ReactNode } from 'react';
 
 interface TextItemSectionProps {
 	children: ReactNode;
-	title?: string;
-	description?: string;
 }
 
-function TextItemSection({
-	children,
-	title,
-	description,
-}: TextItemSectionProps) {
-	return (
-		<section>
-			{title && <h1>{title}</h1>}
-			{description && <p>{description}</p>}
-			{children}
-		</section>
-	);
+function TextItemSection({ children }: TextItemSectionProps) {
+	return <section className='py-container-md space-y-2'>{children}</section>;
 }
 
 export default TextItemSection;

@@ -1,19 +1,13 @@
-import { TextItem } from '@/app/database';
-import Image from 'next/image';
+import { ReactNode } from 'react';
 
 interface TextItemProps {
-	item: TextItem;
+	children: ReactNode;
 }
 
-function TextItem({ item }: TextItemProps) {
-	const { description, id, logoImg, title } = item;
+function TextItem({ children }: TextItemProps) {
 	return (
-		<div className='flex flex-col'>
-			{logoImg && (
-				<Image alt='text item' width={60} height={60} src={logoImg} />
-			)}
-			<h2>{title}</h2>
-			<p>{description}</p>
+		<div className='flex flex-1 py-1 space-y-2 items-center flex-col '>
+			{children}
 		</div>
 	);
 }

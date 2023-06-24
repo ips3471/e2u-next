@@ -6,5 +6,5 @@
 }
 
 body {
-	@apply max-w-6xl mx-auto overflow-y-hidden;
+	@apply max-w-6xl mx-auto;
 }

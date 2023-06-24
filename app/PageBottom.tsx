@@ -5,7 +5,7 @@ interface PageBottomProps {}
 
 function PageBottom({}: PageBottomProps) {
 	return (
-		<div>
+		<div className='text-center  py-container-md w-full'>
 			<CallToAction item={callToActions.main} />
 		</div>
 	);

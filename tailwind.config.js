@@ -22,7 +22,9 @@ module.exports = {
 				body: '#fff',
 			},
 			padding: {
-				'container-sm': '0.5rem;',
+				'container-sm': '0.8rem;',
+				'container-md': '1.5rem',
+				'container-lg': '2.5rem',
 			},
 		},
 	},

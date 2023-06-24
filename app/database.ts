@@ -156,9 +156,9 @@ export type TextItemSection = {
 	id: string;
 	title: string;
 	description: string;
-	items: TextItem[];
+	items: TextItemDetail[];
 };
-export type TextItem = {
+export type TextItemDetail = {
 	id: string;
 	title: string;
 	description: string;
@@ -242,7 +242,7 @@ export const textItems: TextItemSection[] = [
 				description:
 					'새로워진 화면 설계를 기반으로 더 나은 사용자 UI/UX 환경을 제공해요.',
 				title: '편의성',
-				logoImg: '/imgs/interactive.svg',
+				logoImg: '/imgs/interactive-white.svg',
 			},
 			{
 				id: '4',

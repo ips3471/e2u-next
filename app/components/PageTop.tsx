@@ -50,8 +50,8 @@ function PageTop({ isCol = false, isMobile = false }: PageTopProps) {
 			className={`${
 				isCol
 					? ' flex-col md:hidden gap-1'
-					: `flex-row flex-1 md:justify-end gap-2 overflow-x-auto `
-			} flex  `}
+					: `flex-row flex-1 sm:justify-end gap-2 overflow-x-auto `
+			} flex `}
 		>
 			{pageTopItems.map(mapPageTop)}
 		</div>
