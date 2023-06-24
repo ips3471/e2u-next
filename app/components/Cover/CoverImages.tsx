@@ -7,7 +7,7 @@ interface CoverImagesProps {
 
 function CoverImages({ links }: CoverImagesProps) {
 	return (
-		<div className='grid grid-cols-3 gap-3 '>
+		<div className='hidden sm:grid -rotate-12 grid-cols-3 gap-3 '>
 			{links.map((item, index) => (
 				<Image
 					key={index}
