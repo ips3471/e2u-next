@@ -7,7 +7,11 @@ interface StyledLinkProps {
 function StyledLink({ item }: StyledLinkProps) {
 	const { href, isEmp, name } = item;
 	return (
-		<div className={`${isEmp ? 'border rounded-[25px] font-semibold' : ''}`}>
+		<div
+			className={`${
+				isEmp ? 'border border-brand rounded-md p-2 text-brand ' : ''
+			}`}
+		>
 			<a href={href}>{name}</a>
 		</div>
 	);
