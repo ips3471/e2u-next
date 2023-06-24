@@ -21,7 +21,7 @@ function Contents({}: ContentsProps) {
 						{section1.items.map(item => {
 							const { description, id, title, logoImg } = item;
 							return (
-								<TextItem>
+								<TextItem key={id}>
 									{logoImg && (
 										<Image
 											alt='text item'
@@ -45,9 +45,9 @@ function Contents({}: ContentsProps) {
 					<p className='font-light'>{section2.description}</p>
 					<article className='flex flex-col  py-4'>
 						{section2.items.map(item => {
-							const { description, title } = item;
+							const { description, id, title } = item;
 							return (
-								<TextItem>
+								<TextItem key={id}>
 									<h2 className='font-semibold text-brand text-lg text-left w-full '>
 										{title}
 									</h2>
@@ -62,10 +62,10 @@ function Contents({}: ContentsProps) {
 				<TextItemSection>
 					<article className='sm:grid  sm:grid-cols-2 sm:gap-4'>
 						{section3.items.map(item => {
-							const { description, logoImg, title } = item;
+							const { description, id, logoImg, title } = item;
 
 							return (
-								<TextItem>
+								<TextItem key={id}>
 									<div className='border bg-white shadow-inner p-5 space-y-2  w-full'>
 										{logoImg && (
 											<div className='w-full text-left'>
